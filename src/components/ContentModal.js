@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/modal.css';
-import LineModal from '../components/LineModal';
+import LineModal from './LineModal';
 
 class ContentModal extends Component{
     render () {
