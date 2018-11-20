@@ -10,28 +10,25 @@ const SearchButton = (props) =>{
 
 const styles={
     searchContainer:{
-        backgroundColor: '#F0F0F0',
+        backgroundColor: 'transparent',
         shadowColor:'black',
         shadowOffset: { width: 0, height: 3 },
         shadowOpacity: 0.1,
         elevation: 2,
         borderWidth: 2,
-        borderTopWidth: 2,
-        borderBottomWidth: 2,
         borderColor: '#52D89E',
-        borderTopColor: '#52D89E',
-        borderBottomColor: '#52D89E',
         borderRadius: 8,
         marginBottom: 20,
-        paddingRight: 30,
-        flex:1
+        display: 'flex',
+        justifyContent: 'center'
     },
     input:{
-        backgroundColor: 'transparent',
+        backgroundColor: '#F0F0F0',
         borderRadius: 20,
         fontSize: 17,
         color:'#424242',
-        paddingLeft: 10
+        paddingLeft: 10, 
+        width: 300,
     }
 }
 
