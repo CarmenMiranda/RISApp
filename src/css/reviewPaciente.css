@@ -25,6 +25,7 @@
 
 .containerDetail {
     min-width: 230px;
+    width: 70%;
     border: 1px solid #B3B3B3;
     border-width: 1px 0px 1px 0px;
     margin-bottom: -1px;
@@ -37,6 +38,7 @@
 }
 
 .containerDetailText{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -56,9 +58,8 @@
     margin: 5px 0px;;
 }
 
-.arrow{
-    color: #808080;
-    font-weight: normal;
-    font-size: 20px;
-    align-self: flex-end;
+.containerButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

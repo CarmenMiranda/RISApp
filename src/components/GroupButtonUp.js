@@ -10,7 +10,7 @@ const GroupButtonUp = (props) => {
             return (<GroupInfo buttonText = {'Frutos rojos'}/>)
         }
         else{
-            return (<GroupReviewPaciente />);
+            return (<GroupReviewPaciente btnEdit={props.btnEdit} btnDelete={props.btnDelete} />);
         }
     }
 

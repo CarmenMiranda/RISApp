@@ -13,7 +13,8 @@ const styles = {
 		backgroundColor: 'transparent',
 		borderRadius: 8,
 		width: 450,
-		marginLeft: 7
+		marginLeft: 'auto',
+		marginRight: 'auto',
 	}
 }
 export default GroupButtonContainer;
