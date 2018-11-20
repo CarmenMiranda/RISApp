@@ -1,0 +1,32 @@
+.container-fluid{
+    padding: 0;
+}
+
+.mainPromociones{
+    width: 100%;
+    padding-top: 0px;
+    margin:60px 0px;
+    min-height: 65.4vh;
+}
+
+.botonesPromociones button{
+    background-color: #3EC58A;
+    border:1px solid #3DE69C;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: start;
+    padding: 30px 40px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.botonesPromociones button:hover{
+    background-color: #209b66;
+}
+
+.botonesPromociones button .fa-angle-left{
+    margin-right: 50px;
+}
