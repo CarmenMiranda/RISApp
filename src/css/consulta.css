@@ -1,0 +1,36 @@
+.container-consulta{
+    border: 2px solid #12A76A;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    /*margin-right: 36px;*/
+    width: 250px;
+    min-height: 150px;
+}
+
+.namePaciente{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dateConsulta{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.containerButtons-consulta button{
+    background-color: #3EC58A;
+    padding: 5px;
+    border-radius: 8px;
+    border-color: #3DE69C;
+    border-bottom-color: #3DE69C;
+    border-bottom-width: 1px;
+    border-width: 1px;
+    width: 45%;
+    height: 35px;
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
