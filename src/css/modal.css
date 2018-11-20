@@ -34,13 +34,16 @@
 }
 
 .inner-modal {
-  position: absolute;
-  z-index: 4000;
+  /*position: absolute;*/
+  position: fixed;
+  /*z-index: 4000;*/
   margin-top: -32px;
   margin-left: 170px;
   z-index: 3000;
   height: 15px;
   width: 15px;
+  top: 0;
+  left: 40%;
   border-radius: 50%;
   background-color: #f3ece2;
   -webkit-transition: 
@@ -53,12 +56,15 @@
 }
 
 .inner-modal-open {
-  position: absolute;
+  /*position: absolute;*/
+  position: fixed;
   height: 80%;
   width: 50%;
   border-radius: 3px;
   margin-top: 0;
   margin-left: 25%;
+  top: 10%;
+  left: 0;
   -webkit-box-shadow: 
     10px 10px 10px -8px rgba(0,0,0,0.3);
   -webkit-transition: 
@@ -73,7 +79,7 @@
 .content-wrapper {
   padding: 20px;
   text-align: center;
-  visibility: visible;
+  visibility: hidden;
   opacity: 0;
   -webkit-transition: all .2s;
 }

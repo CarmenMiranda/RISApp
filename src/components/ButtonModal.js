@@ -7,7 +7,7 @@ class ButtonModal extends Component{
 		return (
 		  <div>
 				<button
-					className="button"
+					className={this.props.className=="btnHidden"? "button d-none": "button"}
 					onClick={this.props.buttonClick}
 				> {this.props.buttonName}
 				</button>
