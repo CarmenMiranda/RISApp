@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/header.css';
+import Logo from './Logo';
 
 class Header extends Component {
 	render(){
@@ -26,7 +27,7 @@ class Header extends Component {
 		return (
 			<div className="viewStyle">
 				<div className="logo">
-					<img src={require('../assets/icons/logo.png')}/>
+					<Logo type="Header"/>
 				</div>
 				<div className="pages">
 					<a title="Pacientes" className={screen=="Pacientes"? "ButtonPacientes active": "ButtonPacientes"}>
@@ -64,10 +65,9 @@ class Header extends Component {
 				<div className="session">
 					<a className="nav-link dropdown-toggle" id="dropDownSession" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Carmen Miranda</a>
 					<div className="dropdown-menu" aria-labelledby="dropDownSession">
-						{/*<a id="dropPerfil" className={screen=="Home"? "dropdown-item active": "dropdown-item"} href="#">Perfil</a>*/}
 						<a id="dropPacientes" className={screen=="Pacientes"? "dropdown-item active": "dropdown-item"} href="#">Pacientes</a>
-						<a id="dropExpedientes" className="dropdown-item" href="#">Expedientes</a>
-						<a id="dropConsultas" className="dropdown-item" href="#">Consultas</a>
+						<a id="dropExpedientes" className={screen=="Expedientes"? "dropdown-item active": "dropdown-item"} href="#">Expedientes</a>
+						<a id="dropConsultas" className={screen=="Consultas"? "dropdown-item active": "dropdown-item"} href="#">Consultas</a>
 						<a id="dropPromociones" className={screen=="Promociones"? "dropdown-item active": "dropdown-item"} href="#">Promociones</a>
 						<a className="dropdown-item" href="#">Cerrar Sesión</a>
 					</div>
