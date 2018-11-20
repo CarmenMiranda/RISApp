@@ -11,11 +11,9 @@ class GroupReviewPaciente extends Component {
  	componentWillMount(){
  		this.setState({
  			pacient: [
- 				'Brian Nájera',
- 				'Eduardo Martínez',
- 				'Andrea Olarte',
- 				4,
- 				5
+				 {name:'Brian Nájera',birthday:'20/03/1997'},
+				 {name:'Eduardo Martínez',birthday:'10/05/1997'},
+				 {name:'Andrea Olarte',birthday:'14/02/1997'},
  			]
  		});
      }
