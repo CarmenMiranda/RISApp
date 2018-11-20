@@ -1,0 +1,38 @@
+.viewStyleFooter{
+    background-color: #12A76A;
+    min-height: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 25px 20px;
+    box-shadow: 1px 0px 10px 0 rgba(0, 0, 0, .6);
+    position: relative;
+    color: #fff;
+}
+
+.thesis, .logoFooter, .styleTextFooter{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    height: 100%;
+    align-self: center;
+}
+.styleTextFooter{   
+    align-items: flex-end;    
+}
+
+.thesis{
+    align-items:center;
+}
+
+.thesisTitle{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.thesisName{
+    text-align: center;
+}
