@@ -95,6 +95,32 @@ class ContentModal extends Component{
 						<p style={styles.inputLabelStyle}>Los datos no podrán ser recuperados.</p> 
 					</div>;
 				break;
+				case "agregarPromocion":
+					modalContent= <div>
+						<p style={styles.inputLabelStyle}>*Promoción</p> 
+						<input style={styles.inputContainerStyle} type='text' placeholder="Inserte nombre de promoción"/>
+						<p style={styles.inputLabelStyle}>*Descripción</p> 
+						<textarea style={styles.inputContainerStyle} placeholder="Inserte la descripción de la promoción" rows="4" noresize/>
+						<p style={styles.inputLabelStyle}>*Vigencia</p> 
+						<input style={styles.inputContainerStyle} type='time'/>
+					</div>;
+				break;
+				case "editarPromocion":
+					modalContent= <div>
+						<p style={styles.inputLabelStyle}>*Promoción</p> 
+						<input style={styles.inputContainerStyle} type='text' placeholder="Inserte nombre de promoción" value={info.offer.name}/>
+						<p style={styles.inputLabelStyle}>*Descripción</p> 
+						<textarea style={styles.inputContainerStyle} placeholder="Inserte la descripción de la promoción" rows="4" noresize value={info.offer.description}/>
+						<p style={styles.inputLabelStyle}>*Vigencia</p> 
+						<input style={styles.inputContainerStyle} type='date'value={info.offer.validityPeriod}/>
+					</div>;
+				break;
+				case "eliminarPromocion":
+					modalContent= <div className="p-5 mt-5">
+						<p style={styles.inputLabelStyle}>¿Está seguro que desea eliminar la promoción?</p> 
+						<p style={styles.inputLabelStyle}>Los datos no podrán ser recuperados.</p> 
+					</div>;
+				break;
 				default:
 				break;
 			}
