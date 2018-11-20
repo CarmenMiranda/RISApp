@@ -12,7 +12,8 @@ const ReviewPaciente = (props) =>{
                         <p className="textSubtitle">Hola {props.paciente}...</p>
                         <div className="containerButtons">
                             <button className="btnEditarPaciente" style={styles.button} onClick={props.btnEdit} >Editar <i className="fas fa-pencil-alt"></i></button>
-                            <button className="btnEliminarPaciente" style={styles.button} onClick={props.btnDelete} >Eliminar <i className="fas fa-trash"></i></button>
+                            {props.screen=="Pacientes"?<button className="btnEliminarPaciente" style={styles.button} onClick={props.btnDelete} >Eliminar <i className="fas fa-trash"></i></button>:""}
+                            
                         </div>
                     </div>
                 </div>

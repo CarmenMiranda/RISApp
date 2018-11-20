@@ -24,13 +24,13 @@ class GroupReviewPaciente extends Component {
          return(
             <GroupInfoContainer>
             	<GroupInfoSection>
-					<ReviewPaciente foto={require('../assets/icons/Brian.png')} paciente={this.state.pacient[0]} btnEdit={this.props.btnEdit} btnDelete={this.props.btnDelete}/>
+					<ReviewPaciente foto={require('../assets/icons/Brian.png')} paciente={this.state.pacient[0]} btnEdit={this.props.btnEdit} btnDelete={this.props.btnDelete} screen={this.props.screen}/>
 				</GroupInfoSection>
 				<GroupInfoSection>
-					<ReviewPaciente foto={require('../assets/icons/Lalo.jpeg')} paciente={this.state.pacient[1]} btnEdit={this.props.btnEdit} btnDelete={this.props.btnDelete}/>
+					<ReviewPaciente foto={require('../assets/icons/Lalo.jpeg')} paciente={this.state.pacient[1]} btnEdit={this.props.btnEdit} btnDelete={this.props.btnDelete} screen={this.props.screen}/>
 				</GroupInfoSection>
 				<GroupInfoSection>
-					<ReviewPaciente foto={require('../assets/icons/Andrea.jpeg')} paciente={this.state.pacient[2]} btnEdit={this.props.btnEdit} btnDelete={this.props.btnDelete}/>
+					<ReviewPaciente foto={require('../assets/icons/Andrea.jpeg')} paciente={this.state.pacient[2]} btnEdit={this.props.btnEdit} btnDelete={this.props.btnDelete} screen={this.props.screen}/>
 				</GroupInfoSection>
         	</GroupInfoContainer>
          );
