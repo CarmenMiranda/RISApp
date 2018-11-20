@@ -1,0 +1,41 @@
+.container-fluid{
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    padding-top: 0px;
+    margin:60px 0px;
+}
+
+.main select{
+    width: 60%;
+    height: 45px;
+    border: 2px solid #14C17A;
+    padding: 5px 20px;
+    box-shadow: none !important;
+}
+
+.main select:focus{
+    border: 2px solid #14C17A;
+}
+
+.main select option:checked{
+    background-color: rgba(19, 180, 114, .9);
+    color: #fff;
+}
+
+/*.main select option:hover{
+    background-color: rgba(19, 180, 114, .5) !important;
+    color: #fff;
+}*/
+
+.mainCenterPacientes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainCenterPacientes GroupButtonsContainer{
+    margin: 0px auto;
+}
